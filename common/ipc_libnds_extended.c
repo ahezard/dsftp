@@ -44,7 +44,9 @@ void extendedIPC()
 	// Update the MyIPC struct
 	MyIPC->buttons	            	= REG_KEYINPUT;
     MyIPC->buttons_xy_folding		= but;
-	MyIPC->touched                  = (u8)CheckStylus();
+	// TODO : thes line causes issue with latest devKitarm
+	//MyIPC->touched                  = (u8)CheckStylus();
+    MyIPC->touched = true;
     MyIPC->touch_pendown           = (u8)touchPenDown();
     
     //raw x/y
