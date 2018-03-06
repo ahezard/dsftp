@@ -39,7 +39,7 @@ CFLAGS	:=	-g -Wall -Os\
 			-ffast-math \
 			$(ARCH)
 
-CFLAGS	+=	$(INCLUDE) -DARM9
+CFLAGS	+=	$(INCLUDE) -DARM9 -D_GLIBCXX_USE_CXX11_ABI=0
 CXXFLAGS	:=	$(CFLAGS)
 
 
