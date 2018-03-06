@@ -165,7 +165,7 @@ BFontManager::font(const std::string& name, int size, bool bold, bool oblique)
 	  return _fonts[i].font;
 	}
     }
-  return false;
+  return (BFont*)NULL;
 }
 
 void

@@ -137,7 +137,7 @@ BGUI* BGUI::_gui = NULL;
 
 BGUI::BGUI()
 {
-  _selectedWidget = false;
+  _selectedWidget = NULL;
   _redrawsDisabled = false;
 
   irqInit();
